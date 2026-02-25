@@ -1,4 +1,5 @@
 from flask import Flask, request, redirect,url_for,render_template,make_response
+import os
 from datetime import datetime
 app=Flask(__name__)
 users = {} #user data storage
@@ -159,5 +160,9 @@ def accountdelete():
 # def register():
 #     return render_template('register.html')
 
+
+
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
