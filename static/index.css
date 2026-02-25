@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* Main Layout */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0 8%;
+}
+
+/* Left Section */
+.hero-left {
+    width: 45%;
+}
+
+.hero-left h1 {
+    font-size: 58px;
+    font-weight: 700;
+    color: #1b2b5f;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 18px;
+    color: #5f6c7b;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Buttons Layout */
+.action-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* Common Button Style */
+.btn {
+    padding: 14px 38px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+/* Register Button */
+.register-btn {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.3);
+}
+
+.register-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* Login Button */
+.login-btn {
+    border: 2px solid #0072ff;
+    color: #0072ff;
+    background: transparent;
+}
+
+.login-btn:hover {
+    background: #0072ff;
+    color: white;
+}
+
+/* Right Section */
+.hero-right {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-right img {
+    width: 100%;
+    max-width: 700px;
+}

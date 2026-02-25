@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: url('/static/atm3.png') no-repeat center center/cover;
+}
+
+/* Light overlay */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px); */
+    z-index: 0;
+}
+
+.dashboard-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 40px 8%;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.top-bar h1 {
+    color: #1b2b5f;
+}
+
+.logout-btn {
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 2px solid #0072ff;
+    color: #0072ff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #0072ff;
+    color: white;
+}
+
+/* RIGHT SIDE BUTTONS */
+.right-actions {
+    position: absolute;
+    right: 8%;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 260px;
+}
+
+/* Buttons */
+.action-btn {
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 15px;
+    background:#C5E8FD;
+    color: #1b2b5f;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.action-btn:hover {
+    transform: translateX(-8px);
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+}
+
+/* Danger Button */
+.danger {
+    border: 2px solid rgb(246, 153, 153);
+    color: red;
+}
+
+.danger:hover {
+    background: red;
+    color: white;
+}

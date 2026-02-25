@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+/* Main Layout */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0 8%;
+}
+
+/* Left Side */
+.hero-left {
+    width: 45%;
+}
+
+.hero-left h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #1e2a55;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 18px;
+    color: #5f6c7b;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Button */
+.btn-primary {
+    display: inline-block;
+    padding: 14px 40px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 114, 255, 0.4);
+}
+
+/* Right Side Image */
+.hero-right {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-right img {
+    width: 100%;
+    max-width: 650px;
+    object-fit: contain;
+}

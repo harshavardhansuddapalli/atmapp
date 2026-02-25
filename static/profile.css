@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #7bdcd7, #48a9a6);
+}
+
+.profile-card {
+    width: 650px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    background: linear-gradient(to bottom, #1f4fa3, #6b7fd7);
+    color: white;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+.profile-card h1 {
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.profile-info {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.profile-info p {
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+.profile-info span {
+    font-weight: bold;
+    color: #e0e7ff;
+}
+
+.profile-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    background-color: #1e90ff;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0d6efd;
+    transform: translateY(-2px);
+}
+
+.back {
+    background-color: #6c757d;
+}
+
+.back:hover {
+    background-color: #5a6268;
+}
+
+.danger {
+    grid-column: span 2;
+    background-color: #dc3545;
+}
+
+.danger:hover {
+    background-color: #bb2d3b;
+}

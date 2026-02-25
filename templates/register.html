@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44ecae932d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="register-container">
+
+        <!-- LEFT SIDE IMAGE -->
+        <div class="left-section">
+            <img src="/static/atm2.png" alt="ATM Illustration">
+        </div>
+
+        <!-- RIGHT SIDE FORM -->
+        <div class="right-section">
+
+            <div class="form-box">
+                <h2>Create Account</h2>
+                <a href="{{url_for('home')}}" class="home-top">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+
+                <form method="post">
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="eg: john123" required>
+
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="eg: abd@gmail.com" required>
+
+                    <label>Phone No</label>
+                    <input type="text" name="ph_no" placeholder="eg: 1234567890" required>
+
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="******" required>
+
+                    <label>Confirm Password</label>
+                    <input type="password" name="cpassword" placeholder="******" required>
+
+                    <button type="submit">Register</button>
+
+                    <p class="switch-text">
+                        Already have an account?
+                        <a href="{{url_for('login')}}">Login here</a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

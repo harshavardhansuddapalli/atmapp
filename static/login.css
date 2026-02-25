@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: url('/static/atm4.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+}
+
+/* Light overlay for readability */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: rgba(255, 255, 255, 0.75); */
+    /* backdrop-filter: blur(2px); */
+    z-index: 0;
+}
+
+/* Home Button */
+.home-top {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    text-decoration: none;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #0072ff;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.home-top:hover {
+    background: #0072ff;
+    color: white;
+}
+
+/* Wrapper */
+.login-wrapper {
+    position: relative;
+    z-index: 2;
+    margin-left: 8%;
+}
+
+/* Form Card */
+.login-form {
+    /* background: rgba(255, 255, 255, 0.95); */
+    padding: 40px;
+    width: 380px;
+    /* border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1); */
+}
+
+.login-form h2 {
+    margin-bottom: 25px;
+    color: #1b2b5f;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #0072ff;
+    box-shadow: 0 0 5px rgba(0,114,255,0.2);
+}
+
+/* Button */
+button {
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,114,255,0.3);
+}
+
+/* Register Switch */
+.switch-text {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+}
+
+.switch-text a {
+    color: #0072ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}

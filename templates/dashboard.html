@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="dashboard-wrapper">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <h1>Welcome, {{username}}</h1>
+        <a href="{{url_for('logout')}}" class="logout-btn">Log Out</a>
+    </div>
+
+    <!-- Right Side Actions -->
+    <div class="right-actions">
+
+        
+        <a href="{{url_for('deposit')}}" class="action-btn">Deposit</a>
+        <a href="{{url_for('withdraw')}}" class="action-btn">Withdraw</a>
+        <a href="{{url_for('balance')}}" class="action-btn">Balance</a>
+        <a href="{{url_for('statement')}}" class="action-btn">Statements</a>
+        <a href="{{url_for('accountdelete')}}" class="action-btn danger">
+            Delete Account
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>

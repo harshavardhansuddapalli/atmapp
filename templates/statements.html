@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/statements.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44ecae932d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<a href="{{url_for('dashboard')}}" class="top-btn">
+    <i class="fa-solid fa-arrow-left"></i> Dashboard
+</a>
+
+<div class="statements-wrapper">
+
+    <div class="statements-card">
+
+        <h1>Your Bank Statements</h1>
+
+        <div class="table-section">
+
+            <h2>Deposit Statements</h2>
+            <table>
+                <tr>
+                    <th>Amount</th>
+                    <th>Time</th>
+                </tr>
+                {% for i in deposit_statement_info %}
+                <tr>
+                    <td>₹ {{i[0]}}</td>
+                    <td>{{i[1]}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+
+        </div>
+
+        <div class="table-section">
+
+            <h2>Withdraw Statements</h2>
+            <table>
+                <tr>
+                    <th>Amount</th>
+                    <th>Time</th>
+                </tr>
+                {% for j in withdraw_statement_info %}
+                <tr>
+                    <td>₹ {{j[0]}}</td>
+                    <td>{{j[1]}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

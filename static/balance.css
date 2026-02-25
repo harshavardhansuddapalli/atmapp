@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: url('/static/balance.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+}
+
+/* Soft overlay */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(3px); */
+    z-index: 0;
+}
+
+/* Dashboard Button */
+.top-btn {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    text-decoration: none;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #6c63ff;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.top-btn:hover {
+    background: #6c63ff;
+    color: white;
+}
+
+/* Wrapper */
+.balance-wrapper {
+    position: relative;
+    z-index: 2;
+    margin-left: 8%;
+}
+
+/* Glass Card */
+.balance-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.balance-card h1 {
+    margin-bottom: 30px;
+    color: #4b4bb7;
+}
+
+/* Balance Amount */
+.balance-amount {
+    font-size: 42px;
+    font-weight: 700;
+    color: #6c63ff;
+    background: linear-gradient(90deg, #6c63ff, #4b4bb7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

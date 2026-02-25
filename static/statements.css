@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: url('/static/statements.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+}
+
+/* Soft overlay */
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(3px); */
+    z-index: 0;
+}
+
+/* Dashboard Button */
+.top-btn {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    text-decoration: none;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #4b4bb7;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.top-btn:hover {
+    background: #6c63ff;
+    color: white;
+}
+
+/* Wrapper */
+.statements-wrapper {
+    position: relative;
+    z-index: 2;
+    margin-left: 8%;
+    width: 80%;
+}
+
+/* Glass Card */
+.statements-card {
+    /* background: rgba(255, 255, 255, 0.95); */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.statements-card h1 {
+    color: #4b4bb7;
+    margin-bottom: 30px;
+}
+
+/* Sections */
+.table-section {
+    margin-bottom: 40px;
+}
+
+.table-section h2 {
+    margin-bottom: 15px;
+    color: #6c63ff;
+}
+
+/* Table Styling */
+table {
+    width: 60%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background: linear-gradient(90deg, #6c63ff, #4b4bb7);
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: rgba(108, 99, 255, 0.08);
+}

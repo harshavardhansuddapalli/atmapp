@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="hero">
+
+        <div class="hero-left">
+            <h1>Smart ATM <br> Banking System</h1>
+            <p>
+                Secure. Fast. Reliable.  
+                Experience seamless ATM banking with enhanced security and real-time access.
+            </p>
+
+            <div class="action-buttons">
+                <a href="{{url_for('register')}}" class="btn register-btn">REGISTER</a>
+                <a href="{{url_for('login')}}" class="btn login-btn">LOGIN</a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <img src="/static/atm1.png" alt="ATM Illustration">
+        </div>
+
+    </div>
+
+</body>
+</html>

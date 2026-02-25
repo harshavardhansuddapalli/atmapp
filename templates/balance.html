@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Balance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/balance.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44ecae932d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<a href="{{url_for('dashboard')}}" class="top-btn">
+    <i class="fa-solid fa-arrow-left"></i> Dashboard
+</a>
+
+<div class="balance-wrapper">
+
+    <div class="balance-card">
+        <h1>Your Current Balance</h1>
+
+        <div class="balance-amount">
+            ₹ {{balance_amount}}
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
